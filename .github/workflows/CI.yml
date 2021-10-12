@@ -16,7 +16,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           secrets: |
-            SECRET1
+            GIHUB
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          SECRET1: ${{ secrets.SECRET1 }}
+          GIHUB: ${{ secrets.GIHUB }}

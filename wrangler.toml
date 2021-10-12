@@ -12,4 +12,4 @@ command = "npm install && npm run build"
 format = "service-worker"
 
 # [secrets]
-# SECRET1
+# GITHUB
