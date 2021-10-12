@@ -1,6 +1,6 @@
 import { graphql } from '@octokit/graphql';
 
-export class GithubApi {
+export default class Github {
   private point: typeof graphql;
 
   constructor() {

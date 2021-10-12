@@ -1,0 +1,25 @@
+{
+  "totalCount": 2,
+  "pageInfo": {
+    "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNS0wMlQxMTo0Mjo0NiswMzowMM4VrCu_",
+    "hasNextPage": false
+  },
+  "repositories": [
+    {
+      "id": "R_kgDOGM-3Xw",
+      "diskUsage": 122,
+      "name": "domainer-api",
+      "description": null,
+      "isPrivate": false,
+      "createdAt": "2021-10-12T09:19:17Z"
+    },
+    {
+      "id": "R_kgDOGMWb-A",
+      "diskUsage": 238,
+      "name": "domainer",
+      "description": null,
+      "isPrivate": false,
+      "createdAt": "2021-10-10T14:07:29Z"
+    }
+  ]
+}

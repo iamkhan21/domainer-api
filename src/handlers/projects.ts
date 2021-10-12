@@ -1,12 +1,12 @@
 import { Request } from 'itty-router';
-import { GithubApi } from '../domains/services/github-api';
+import GithubService from '../domains/services/github';
 
 const Projects = async (
   request: Required<Pick<Request, 'params'>>,
 ): Promise<Response> => {
   const { user, cursor } = request.params;
 
-  const repositories = await new GithubApi().getUserRepos(user, cursor);
+  const repositories = await new GithubService().getUserRepos(user, cursor);
 
   const body = JSON.stringify(repositories);
   const headers = {
