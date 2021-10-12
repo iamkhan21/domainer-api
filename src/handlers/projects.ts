@@ -10,7 +10,8 @@ const Projects = async (
 
   const body = JSON.stringify(repositories);
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': 'https://domainer.pages.dev',
+    Vary: 'Origin',
     'Content-type': 'application/json',
   };
   return new Response(body, { headers });
