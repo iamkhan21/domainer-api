@@ -4,6 +4,7 @@
   "description": "Cloudflare worker TypeScript template",
   "main": "dist/worker.js",
   "scripts": {
+    "dev": "wrangler dev",
     "build": "webpack",
     "test": "jest --config jestconfig.json --verbose",
     "update:deps": "npx npm-check-updates -i && npm i"
@@ -21,9 +22,11 @@
     "@cloudflare/workers-types": "^2.2.2",
     "@cloudflare/wrangler": "^1.19.3",
     "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
     "@types/service-worker-mock": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "dotenv": "^10.0.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-typescript": "^3.0.0",

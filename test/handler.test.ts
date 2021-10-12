@@ -6,18 +6,21 @@ declare let global: any;
 
 describe('handle', () => {
   beforeEach(() => {
-    Object.assign(global, makeServiceWorkerEnv());
     jest.resetModules();
+    Object.assign(global, makeServiceWorkerEnv());
   });
 
   test('handle GET secret', async () => {
+    global.SECRET1 = process.env.SECRET1;
+
     const result = await handleRequest(
       new Request('/secret', { method: 'GET' }),
     );
+
     expect(result.status).toEqual(200);
     const secret = await result.json();
 
-    expect(secret).toEqual('secret empty');
+    expect(secret).toEqual({ data: process.env.SECRET1 });
   });
 
   test('handle GET posts', async () => {
