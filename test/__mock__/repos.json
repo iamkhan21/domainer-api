@@ -10,7 +10,6 @@
       "diskUsage": 122,
       "name": "domainer-api",
       "description": null,
-      "isPrivate": false,
       "createdAt": "2021-10-12T09:19:17Z"
     },
     {
@@ -18,7 +17,6 @@
       "diskUsage": 238,
       "name": "domainer",
       "description": null,
-      "isPrivate": false,
       "createdAt": "2021-10-10T14:07:29Z"
     }
   ]
