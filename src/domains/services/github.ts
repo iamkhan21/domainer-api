@@ -19,7 +19,7 @@ export default class Github {
       `
     query projects($user: String!, $cursor: String) {
       user(login: $user) {
-        repositories(first: 5, privacy: PUBLIC, orderBy: {field: CREATED_AT, direction: DESC}, after: $cursor) {
+        repositories(first: 10, privacy: PUBLIC, orderBy: {field: CREATED_AT, direction: DESC}, after: $cursor) {
           totalCount
           pageInfo {
             endCursor
@@ -31,6 +31,7 @@ export default class Github {
             name
             description
             createdAt
+            url
           }
         }
       }
