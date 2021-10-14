@@ -1,8 +1,8 @@
 import { Request } from 'itty-router';
 import GithubService from '../domains/services/github';
 
-const mode = process.env.NODE_ENV;
-const dev = mode === 'development';
+console.log(123, process.env.NODE_ENV);
+const dev = process.env.NODE_ENV === 'development';
 const access = dev ? '*' : 'https://domainer.pages.dev';
 
 const Projects = async (
