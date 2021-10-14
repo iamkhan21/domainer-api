@@ -1,5 +1,8 @@
 const path = require('path');
 
+const mode =
+  process.env.NODE_ENV === 'development' ? 'development' : 'production';
+
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -7,7 +10,7 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
   },
   devtool: 'cheap-module-source-map',
-  mode: 'development',
+  mode,
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
